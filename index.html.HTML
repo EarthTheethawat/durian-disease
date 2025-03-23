@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รูปภาพและข้อความทับ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #d4edda;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQffY_PSn2FNllLoVo7yp-JfMJpC969TZhAvw&s') no-repeat center center/cover;
+        }
+
+        table {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="text-overlay">
+            โรคและการป้องกันในทุเรียน
+        </div>
+    </div>
+
+    <div class="content">
+        <table>
+            <tr>
+                <th>ชื่อโรค</th>
+                <th>สาเหตุ</th>
+                <th>สารเคมีที่ใช้รักษา</th>
+            </tr>
+            <tr>
+                <td>โรคใบติด</td>
+                <td>เชื้อรา Rhizoctonia solani</td>
+                <td>แมนโคเซบ (Mancozeb), คาร์เบนดาซิม (Carbendazim)</td>
+            </tr>
+            <tr>
+                <td>โรคราดำ</td>
+                <td>เชื้อรา Capnodium sp.</td>
+                <td>คอปเปอร์ออกซีคลอไรด์ (Copper Oxychloride)</td>
+            </tr>
+            <tr>
+                <td>โรคใบจุด</td>
+                <td>เชื้อรา Phyllosticta durionis</td>
+                <td>โพรพิเนบ (Propineb), ไดฟีโนโคนาโซล (Difenoconazole)</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
